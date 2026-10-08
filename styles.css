@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-size: 18px;
+  color: #2D3748;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  min-height: 100vh;
+}
+
+header  { grid-area: header; }
+aside   { grid-area: sidebar; }
+main    { grid-area: main; }
+footer  { grid-area: footer; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3C8527;
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 39px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  margin: 10px 0 5px;
+}
+
+header p {
+  margin: 0;
+  font-style: italic;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+}
+
+aside {
+  padding: 30px 20px;
+  border-right: 1px solid #E2E8F0;
+}
+
+aside h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #28651C;
+  margin: 0 0 8px;
+}
+
+.about {
+  background-color: #E2E8F0;
+  padding: 12px;
+  margin-bottom: 25px;
+}
+
+.about h3 {
+  color: #333322;
+}
+
+.about p {
+  margin: 0;
+  font-size: 16px;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px;
+}
+
+aside li {
+  margin-bottom: 5px;
+}
+
+aside a {
+  color: #2879B8;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main {
+  padding: 30px;
+}
+
+article {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E2E8F0;
+  overflow: auto;
+}
+
+article h2 {
+  font-size: 34px;
+  color: #28651C;
+  margin: 0;
+}
+
+.meta {
+  color: #667267;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+article img {
+  width: 200px;
+  height: 125px;
+  border-radius: 4px;
+}
+
+.right {
+  float: right;
+  margin: 0 0 10px 20px;
+}
+
+.left {
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+footer {
+  background-color: #28651C;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 15px;
+}
